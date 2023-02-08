@@ -1,5 +1,5 @@
 # Kattis-AU-qualifier
-Uploading my solutions to the Kattis problems for the 2023 Auburn ICPC qualifier competition
+Uploading my solutions to the Kattis problems for a mock competition at Auburn
 
 # Problems:
 
