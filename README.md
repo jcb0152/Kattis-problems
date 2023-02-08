@@ -1,7 +1,8 @@
 # Kattis-AU-qualifier
 Uploading my solutions to the Kattis problems for the 2023 Auburn ICPC qualifier competition
 
-Problems:
+# Problems:
+
 [Alien Integers](https://open.kattis.com/problems/alienintegers): alien.py
 
 [Avoiding Asteroids](https://open.kattis.com/problems/avoidingasteroids): asteroid.py
