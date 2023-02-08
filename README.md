@@ -1,7 +1,7 @@
-# Kattis-AU-qualifier
-Uploading my solutions to the Kattis problems for a mock competition at Auburn
+# Kattis-Problems
+Uploading my solutions to Kattis problems
 
-# Problems:
+# February 2023:
 
 [Alien Integers](https://open.kattis.com/problems/alienintegers): alien.py
 
