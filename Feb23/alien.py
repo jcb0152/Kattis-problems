@@ -1,4 +1,6 @@
-# Task: Identify number(s) closest to input number with no digits in common
+# Task: Identify number(s) closest to input number with no digits in common.
+# Strategy: Generate closest number less than and greater than input number.
+# Compare to determine which is closer, or output both if equal distance.
 def main():
     num = str(int(input()))
     digits = [str(x) for x in range(10)]
