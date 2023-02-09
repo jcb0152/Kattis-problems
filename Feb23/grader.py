@@ -1,3 +1,5 @@
+# Task: Given line count, compress a list of lines with errors into correct and error ranges.
+# Strategy: Create tuples for each range of errors in input. Iterate over list to create tuples for correct line ranges.
 from collections import deque
 
 (lines, err) = input().split()
@@ -6,6 +8,8 @@ err = int(err)
 
 err_num = deque([int(x) for x in input().split()])
 
+# Create a tuple with the start and end of consecutive error lines.
+# Create a new tuple if there is a gap
 errors = []
 while (len(err_num) > 0):
     prev = err_num.popleft()
@@ -20,6 +24,8 @@ correct = []
 format_err = []
 prev = 1
 
+# Correct lines are between error tuples
+# Special cases for correct lines at start/end of code
 for group in errors:
     if ((group[0] - 1) > 0):
         correct.append((prev, group[0] - 1))
@@ -34,6 +40,7 @@ for group in errors:
 if (prev != lines + 1):
     correct.append((prev, lines))
 
+# Format tuples into strings. If len(range) = 1, display as single number instead of range.
 format_cor = []
 for group in correct:
     if group[0] == group[1]:
